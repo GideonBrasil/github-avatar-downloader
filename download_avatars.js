@@ -40,7 +40,7 @@ getRepoContributors(owner, repo, function(err, result) {
 	if (err){
 		console.log('err:', err)
 	}
-  for (var contributers = 0; contributers < result.length; contributers++) {
+  for (let contributers of result) {
 		var filepath = `./avatars/${contributers.login}.jpg`;
 		var contURL = contributers.avatar_url;
 		downloadImageByURL(contURL, filepath)
