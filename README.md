@@ -10,4 +10,4 @@ This program should be executed from the command line, in the following manner:
 
 `node download_avatars.js jquery jquery`
 
-It should work with any public repo
+It should work with any public repo and download avatars
